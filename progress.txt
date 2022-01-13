@@ -1,0 +1,6 @@
+4/1 1.5h
+5/1 3h nav bar
+8/1 1.5h nav bar clear
+
+9/1  2.25h footer clear
+10/1 1.5h CTA clear

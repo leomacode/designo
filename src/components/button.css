@@ -1,0 +1,31 @@
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  display: incline-block;
+  padding: 1.5em 2em;
+  margin-top: 2rem;
+  border-radius: 0.75rem;
+  letter-spacing: 2px;
+}
+
+.btn-dark {
+  color: var(--clr-black);
+  background: var(--clr-white);
+}
+
+.btn-light {
+  color: var(--clr-white);
+  background: var(--clr-peach);
+}
+
+.btn {
+  text-decoration: none;
+  display: incline-block;
+  padding: 2em 2em;
+  transition: background-color 300ms ease-in-out;
+}
+
+.btn:hover {
+  background: var(--clr-lt-peach);
+  color: var(--clr-white);
+}

@@ -1,0 +1,56 @@
+.cat {
+  z-index: 2;
+  padding: 4rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  position: relative;
+  top: 10rem;
+  flex-direction: column;
+  gap: 2rem;
+  background: url("./../assets/shared/desktop/bg-pattern-call-to-action.svg"),
+    var(--clr-peach);
+  background-size: cover;
+  background-position: center;
+}
+
+.cat-text {
+  padding: 1rem 0;
+}
+
+.cat-text h2 {
+  margin-bottom: 0.5rem;
+}
+
+.cat-btn {
+  padding-bottom: 0rem;
+}
+
+@media (min-width: 40rem) {
+  .cat {
+    top: 5rem;
+  }
+
+  .cat-text {
+    padding: 0 8rem;
+  }
+
+  .cat-btn {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 50rem) {
+  .cat {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 4rem;
+  }
+
+  .cat-text {
+    padding: 0;
+    text-align: left;
+    flex-basis: 45%;
+  }
+}
