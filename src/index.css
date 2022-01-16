@@ -102,20 +102,20 @@ body {
 }
 
 .text-h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 48px;
 }
 
 .text-h2 {
-  font-size: 2.1rem;
+  font-size: 1.75rem;
   font-weight: 500;
   line-height: 48px;
-  letter-spacing: 2px;
+  letter-spacing: 1.4px;
 }
 
 .text-h3 {
-  font-size: 1.1rem;
+  font-size: 0.94rem;
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 5px;
@@ -125,6 +125,42 @@ body {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 26px;
+}
+
+@media (min-width: 35rem) {
+  .text-h1 {
+    font-size: 2.75rem;
+  }
+
+  .text-h2 {
+    font-size: 2.25rem;
+  }
+
+  .text-h3 {
+    font-size: 1.2rem;
+  }
+
+  .text-body {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 45rem) {
+  .text-h1 {
+    font-size: 3rem;
+  }
+
+  .text-h2 {
+    font-size: 2.5rem;
+  }
+
+  .text-h3 {
+    font-size: 1.25rem;
+  }
+
+  .text-body {
+    font-size: 1rem;
+  }
 }
 
 .text-dark {
@@ -137,6 +173,10 @@ body {
 
 .text-gray {
   color: var(--clr-text-gray);
+}
+
+.text-center {
+  text-align: center;
 }
 
 .bold {
@@ -173,41 +213,17 @@ body {
 }
 
 .nav-offset {
-  margin-top: 7.5rem;
+  margin-top: 5.75rem;
 }
 
-@media (min-width: 35rem) {
-  .text-h1 {
-    font-size: 2.75rem;
-  }
-
-  .text-h2 {
-    font-size: 2.25rem;
-  }
-
-  .text-h3 {
-    font-size: 1.2rem;
-  }
-
-  .text-body {
-    font-size: 0.95rem;
-  }
+.border-curve {
+  border-radius: 0.5rem;
 }
 
-@media (min-width: 45rem) {
-  .text-h1 {
-    font-size: 3rem;
-  }
-
-  .text-h2 {
-    font-size: 2.5rem;
-  }
-
-  .text-h3 {
-    font-size: 1.25rem;
-  }
-
-  .text-body {
-    font-size: 1rem;
+@media (min-width: 40rem) {
+  .section-wrap {
+    padding: 0 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
   }
 }

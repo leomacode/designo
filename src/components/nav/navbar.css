@@ -56,7 +56,7 @@ header {
   display: none;
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 40rem) {
   .navbar {
     position: relative;
 

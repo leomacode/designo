@@ -4,7 +4,7 @@ import "./cat.css";
 
 function CAT() {
   return (
-    <div className="cat container flex">
+    <div className="cat container flex border-curve">
       <div className="cat-text">
         <h2 className="text-h2 text-white">Let’s talk about your project</h2>
         <p className="text-white text-body">

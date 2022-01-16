@@ -4,5 +4,7 @@ export { default as Footer } from "./Footer";
 export { default as LinkItem } from "./LinkItem";
 export { default as CAT } from "./CAT";
 export { default as Button } from "./Button";
+export { default as ServiceCard } from "./home/ServiceCard";
+export { default as ProjectLink } from "./ProjectLink";
 
 export const paths = ["about", "locations", "contact"];
