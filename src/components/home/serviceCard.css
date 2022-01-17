@@ -1,0 +1,10 @@
+.service-card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+}
+
+.service-card:not(:last-child) {
+  margin-bottom: 2rem;
+}

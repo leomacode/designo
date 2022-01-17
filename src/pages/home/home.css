@@ -1,5 +1,5 @@
 .hero {
-  background: url("../assets/home/desktop/bg-pattern-hero-home.svg"),
+  background: url("../../assets/home/desktop/bg-pattern-hero-home.svg"),
     var(--clr-peach);
   background-repeat: no-repeat;
   background-position: center left;
@@ -20,18 +20,22 @@
 
 .home-btn {
   display: block;
-  margin-top: 2rem;
+  margin-top: 1.25rem;
 }
 
 .hero-img {
-  background: url("../assets/home/desktop/image-hero-phone.png");
-  background-position: center -4rem;
+  background: url("../../assets/home/desktop/image-hero-phone.png");
+  background-position: center -5rem;
   background-repeat: no-repeat;
-  height: 30.5rem;
+  height: 30rem;
 }
 
 @media (min-width: 40rem) {
   .hero {
     border-radius: 0.5rem;
+  }
+
+  .hero-sub-heading {
+    padding: 1rem 2rem;
   }
 }

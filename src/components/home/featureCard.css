@@ -1,0 +1,16 @@
+.feature-card {
+  flex-direction: column;
+}
+
+.feature-card:not(:last-child) {
+  margin-bottom: 6rem;
+}
+
+.feature-card-img {
+  margin: 0 auto;
+  background: url("./../../assets/shared/desktop/bg-pattern-small-circle.svg");
+}
+
+.feature-card-title {
+  padding: 2.5rem 0;
+}

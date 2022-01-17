@@ -5,7 +5,10 @@ import { arrow } from "../assets/shared/desktop";
 
 function ProjectLink({ path }) {
   return (
-    <Link to="/about" className="project-link text-h3 flex">
+    <Link
+      to="/about"
+      className="project-link text-h3 uppercase text-white flex"
+    >
       <span>view projects</span>
       <div className="link-icon">
         <img src={arrow} alt="icon" />

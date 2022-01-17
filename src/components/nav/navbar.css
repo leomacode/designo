@@ -59,7 +59,6 @@ header {
 @media (max-width: 40rem) {
   .navbar {
     position: relative;
-
     justify-content: space-between;
   }
 

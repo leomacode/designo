@@ -4,3 +4,6 @@
 
 9/1  2.25h footer clear
 10/1 1.5h CTA clear
+
+16/ 1 2.25 home page
+17/1 1.5 home page

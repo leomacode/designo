@@ -1,5 +1,7 @@
 import React from "react";
-import { CAT, Button, ServiceCard } from "./../components";
+import { CAT, Button, ServiceCard, FeatureCard } from "./../../components";
+import { passionate } from "./../../assets/home";
+import { services, features } from "./homeData";
 import "./home.css";
 
 function Home() {
@@ -27,13 +29,26 @@ function Home() {
         </div>
       </section>
 
-      <section className="services container">
-        <ServiceCard title="web design" />
-        <ServiceCard title="app design" />
-        <ServiceCard title="graphic design" />
+      <section className="services container section-margin">
+        {services.map(({ title, img, imgM, imgL, imgS }) => (
+          <ServiceCard
+            key={title}
+            title={title}
+            img={img}
+            imgM={imgM}
+            imgL={imgL}
+            imgS={imgS}
+          />
+        ))}
       </section>
-      <section className="features container"></section>
-      <section className="container">
+
+      <section className="features container section-margin">
+        {features.map(({ title, img, text }) => (
+          <FeatureCard key={title} title={title} imgUrl={img} text={text} />
+        ))}
+      </section>
+
+      <section className="container ">
         <CAT />
       </section>
     </main>
