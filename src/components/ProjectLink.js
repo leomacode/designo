@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 import { arrow } from "../assets/shared/desktop";
 
 function ProjectLink({ path }) {
+  const pathName = path.split(" ").join("-");
+  console.log(pathName);
   return (
     <Link
-      to="/about"
+      to={`/services/${pathName}`}
       className="project-link text-h3 uppercase text-white flex"
     >
       <span className="text-body">view projects</span>
