@@ -30,6 +30,14 @@
   height: 30rem;
 }
 
+.services {
+  gap: 2rem;
+}
+
+.features {
+  gap: 4rem;
+}
+
 @media (min-width: 40rem) {
   .hero {
     border-radius: 0.5rem;
@@ -37,5 +45,49 @@
 
   .hero-sub-heading {
     padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .hero {
+    background-position: right top;
+    flex-direction: row;
+    padding-top: 0;
+  }
+
+  .hero-text {
+    padding-top: 6rem;
+    text-align: left;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 37rem;
+  }
+
+  .hero-sub-heading {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .services {
+    grid-template-areas:
+      "web app"
+      "web graphic";
+  }
+
+  .web {
+    grid-area: web;
+  }
+  .app {
+    grid-area: app;
+  }
+  .graphic {
+    grid-area: graphic;
+  }
+
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
   }
 }

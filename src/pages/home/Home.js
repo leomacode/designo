@@ -1,6 +1,5 @@
 import React from "react";
 import { CAT, Button, ServiceCard, FeatureCard } from "./../../components";
-import { passionate } from "./../../assets/home";
 import { services, features } from "./homeData";
 import "./home.css";
 
@@ -29,7 +28,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="services container section-margin">
+      <section className="services container section-margin grid">
         {services.map(({ title, img, imgM, imgL, imgS }) => (
           <ServiceCard
             key={title}
@@ -42,7 +41,7 @@ function Home() {
         ))}
       </section>
 
-      <section className="features container section-margin">
+      <section className="features container section-margin grid">
         {features.map(({ title, img, text }) => (
           <FeatureCard key={title} title={title} imgUrl={img} text={text} />
         ))}

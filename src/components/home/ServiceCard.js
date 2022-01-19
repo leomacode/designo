@@ -3,6 +3,8 @@ import "./serviceCard.css";
 import { ProjectLink } from "../";
 
 function ServiceCard({ title, img, imgM, imgL, imgS }) {
+  const titleClass = title.split(" ").shift();
+
   function selectImg() {
     let image = imgM;
     if (window.innerWidth < 640) {
@@ -19,11 +21,13 @@ function ServiceCard({ title, img, imgM, imgL, imgS }) {
 
   return (
     <div
-      className="service-card border-curve text-white"
+      className={`service-card  border-curve text-white ${titleClass}`}
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
-      <div className="service-card-title text-h2 uppercase">{title}</div>
-      <ProjectLink path={title} />
+      <div className={`service-card-bg flex ${titleClass}-bg`}>
+        <div className="service-card-title text-h2 uppercase">{title}</div>
+        <ProjectLink path={title} />
+      </div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ function ProjectLink({ path }) {
       to="/about"
       className="project-link text-h3 uppercase text-white flex"
     >
-      <span>view projects</span>
+      <span className="text-body">view projects</span>
       <div className="link-icon">
         <img src={arrow} alt="icon" />
       </div>

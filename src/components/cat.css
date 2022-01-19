@@ -12,7 +12,7 @@
   margin-bottom: -10rem;
 }
 
-.cat-text h2 {
+.cat-text h1 {
   margin-bottom: 0.5rem;
   padding: 0 2rem;
 }
@@ -26,7 +26,7 @@
     margin-bottom: -5rem;
   }
 
-  .cat-text h2 {
+  .cat-text h1 {
     padding: 0 6rem;
   }
 
@@ -54,7 +54,7 @@
     flex-basis: 45%;
   }
 
-  .cat-text h2,
+  .cat-text h1,
   .cat-text p {
     padding: 0;
   }

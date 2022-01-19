@@ -2,10 +2,6 @@
   flex-direction: column;
 }
 
-.feature-card:not(:last-child) {
-  margin-bottom: 6rem;
-}
-
 .feature-card-img {
   margin: 0 auto;
   background: url("./../../assets/shared/desktop/bg-pattern-small-circle.svg");
@@ -13,4 +9,42 @@
 
 .feature-card-title {
   padding: 2.5rem 0;
+}
+
+@media (min-width: 40rem) {
+  .feature-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+
+  .feature-card:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  .feature-card-text {
+    text-align: left;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .feature-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .feature-card:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .feature-card-text {
+    text-align: center;
+  }
+
+  .feature-card-title {
+    padding: 2rem 0;
+  }
 }
