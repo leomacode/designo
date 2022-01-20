@@ -87,6 +87,7 @@ select {
   --clr-lt-peach: #ffad9b;
   --clr-dk-grey: #333136;
   --clr-lt-grey: #f1f3f5;
+  --clr-lt-pink: #fdf3f0;
 }
 
 body {
@@ -180,6 +181,10 @@ body {
   color: var(--clr-text-gray);
 }
 
+.text-peach {
+  color: var(--clr-peach);
+}
+
 .text-center {
   text-align: center;
 }
@@ -199,8 +204,15 @@ body {
   background: var(--clr-peach);
 }
 
+.bg-lt-pink {
+  background: var(--clr-lt-pink);
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
 }
 
 .flex {

@@ -12,7 +12,7 @@ import {
   friendly,
   passionate,
   resourceful,
-} from "./../../assets/home";
+} from "../assets/home";
 
 const services = [
   {

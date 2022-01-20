@@ -1,11 +1,10 @@
 .hero {
-  background: url("../../assets/home/desktop/bg-pattern-hero-home.svg"),
+  background: url("../assets/home/desktop/bg-pattern-hero-home.svg"),
     var(--clr-peach);
   background-repeat: no-repeat;
   background-position: center left;
   overflow: hidden;
   padding-top: 4rem;
-  border-radius: 0;
   flex-direction: column;
 }
 
@@ -24,7 +23,7 @@
 }
 
 .hero-img {
-  background: url("../../assets/home/desktop/image-hero-phone.png");
+  background: url("../assets/home/desktop/image-hero-phone.png");
   background-position: center -5rem;
   background-repeat: no-repeat;
   height: 30rem;

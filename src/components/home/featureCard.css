@@ -5,10 +5,11 @@
 .feature-card-img {
   margin: 0 auto;
   background: url("./../../assets/shared/desktop/bg-pattern-small-circle.svg");
+  margin-bottom: 1rem;
 }
 
 .feature-card-title {
-  padding: 2.5rem 0;
+  padding: 2rem 0;
 }
 
 @media (min-width: 40rem) {

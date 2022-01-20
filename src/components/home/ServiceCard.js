@@ -2,7 +2,7 @@ import React from "react";
 import "./serviceCard.css";
 import { ProjectLink } from "../";
 
-function ServiceCard({ title, img, imgM, imgL, imgS }) {
+function ServiceCard({ title, img, imgM, imgL }) {
   const titleClass = title.split(" ").shift();
 
   function selectImg() {

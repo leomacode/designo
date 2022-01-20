@@ -1,5 +1,5 @@
 export { default as Navbar } from "./nav/Navbar";
-export { default as Service } from "./Service";
+export { default as ProjectCard } from "./ProjectCard";
 export { default as Footer } from "./Footer";
 export { default as LinkItem } from "./LinkItem";
 export { default as CAT } from "./CAT";

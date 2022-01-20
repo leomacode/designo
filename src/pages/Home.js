@@ -1,13 +1,13 @@
 import React from "react";
-import { CAT, Button, ServiceCard, FeatureCard } from "./../../components";
-import { services, features } from "./homeData";
+import { CAT, Button, ServiceCard, FeatureCard } from "../components";
+import { services, features } from "../data/homeData";
 import "./home.css";
 
 function Home() {
   return (
     <main className="nav-offset text-center home-main">
       <section className="section-wrap">
-        <div className="hero border-curve flex">
+        <div className="hero flex">
           <div className="hero-text text-white">
             <h1 className="hero-heading text-h1">
               Award-winning custom designs and digital branding solutions
