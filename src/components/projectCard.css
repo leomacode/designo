@@ -19,6 +19,10 @@
     flex-direction: row;
   }
 
+  .project-card > * {
+    flex: 1;
+  }
+
   .project-card-intro {
     padding: 3rem 2rem;
   }
@@ -27,7 +31,7 @@
 @media (min-width: 60rem) {
   .project-card {
     flex-direction: column;
-    max-width: 21.875rem;
+    max-width: 30rem;
   }
 
   .project-card-intro {

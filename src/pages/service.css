@@ -1,9 +1,8 @@
 .service {
-  background: url("../assets/home/desktop/bg-pattern-hero-home.svg"),
-    var(--clr-peach);
+  background: var(--clr-peach);
   background-repeat: no-repeat;
-  background-position: top right;
-  background-size: contain;
+  background-position: center center;
+  background-size: cover;
   padding: 6.56rem 1.5rem;
 }
 
@@ -11,8 +10,28 @@
   margin-bottom: 2rem;
 }
 
+.service-projects > * {
+  margin: 2.5rem 0;
+}
+
 @media (min-width: 40rem) {
   .service {
     border-radius: 0.5rem;
+  }
+
+  .service-projects > * {
+    margin: 2rem 0;
+  }
+}
+
+@media (min-width: 60rem) {
+  .service-projects {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+    margin: 5rem auto;
+  }
+
+  .service-projects > * {
+    margin: 0;
   }
 }

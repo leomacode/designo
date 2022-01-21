@@ -5,6 +5,9 @@ import { ProjectLink } from "../";
 function ServiceCard({ title, img, imgM, imgL }) {
   const titleClass = title.split(" ").shift();
 
+  const imageUrl = selectImg();
+
+  //get background according to the window size
   function selectImg() {
     let image = imgM;
     if (window.innerWidth < 640) {
@@ -17,8 +20,6 @@ function ServiceCard({ title, img, imgM, imgL }) {
 
     return image;
   }
-  const imageUrl = selectImg();
-
   return (
     <div
       className={`service-card  border-curve text-white ${titleClass}`}

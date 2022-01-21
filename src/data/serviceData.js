@@ -13,6 +13,9 @@ import {
   boxedWater,
   change,
   science,
+  appBg,
+  webBg,
+  graphicBg,
 } from "../assets";
 
 const projectData = [
@@ -20,6 +23,7 @@ const projectData = [
     pageTitle: "graphic design",
     description:
       "We deliver eye-catching branding materials that are tailored to meet your business objectives.",
+    backGround: graphicBg,
     projects: [
       {
         img: change,
@@ -45,6 +49,7 @@ const projectData = [
     pageTitle: "web design",
     description:
       "We build websites that serve as powerful marketing tools and bring memorable brand experiences",
+    backGround: webBg,
     projects: [
       {
         img: express,
@@ -89,6 +94,7 @@ const projectData = [
     pageTitle: "app design",
     description:
       "Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.",
+    backGround: appBg,
     projects: [
       {
         img: airfilter,
