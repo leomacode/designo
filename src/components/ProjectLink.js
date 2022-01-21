@@ -5,7 +5,7 @@ import { arrow } from "../assets/shared/desktop";
 
 function ProjectLink({ path }) {
   const pathName = path.split(" ").join("-");
-  console.log(pathName);
+
   return (
     <Link
       to={`/services/${pathName}`}
