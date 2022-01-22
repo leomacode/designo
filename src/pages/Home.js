@@ -28,7 +28,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="services container section-margin grid">
+      <section className="home-services container section-margin grid">
         {services.map(({ title, img, imgM, imgL, imgS }) => (
           <ServiceCard
             key={title}

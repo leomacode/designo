@@ -7,5 +7,6 @@ export { default as Button } from "./Button";
 export { default as ServiceCard } from "./home/ServiceCard";
 export { default as FeatureCard } from "./home/FeatureCard";
 export { default as ProjectLink } from "./ProjectLink";
+export { default as ScrollToTop } from "./ScrollToTop";
 
 export const paths = ["about", "locations", "contact"];

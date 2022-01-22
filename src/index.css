@@ -242,8 +242,8 @@ body {
 }
 
 .section-margin {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 @media (min-width: 40rem) {

@@ -14,6 +14,10 @@
   margin: 2.5rem 0;
 }
 
+.service-cards {
+  gap: 1.5rem;
+}
+
 @media (min-width: 40rem) {
   .service {
     border-radius: 0.5rem;
@@ -33,5 +37,16 @@
 
   .service-projects > * {
     margin: 0;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-cards > * {
+    grid-area: auto;
+  }
+  .service-cards .service-card .service-card-bg {
+    padding: 6.69rem 0;
   }
 }

@@ -52,7 +52,7 @@ function Service() {
         ))}
       </section>
 
-      <section className="services container section-margin grid section-margin">
+      <section className="service-cards container grid section-margin">
         {serviceCards.map(({ title, img, imgM, imgL, imgS }) => (
           <ServiceCard
             key={title}
