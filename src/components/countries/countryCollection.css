@@ -1,0 +1,18 @@
+.country-collection {
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 40rem) {
+  .country-collection {
+    gap: 5rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .country-collection {
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+  }
+}

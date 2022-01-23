@@ -1,0 +1,56 @@
+.about-us-intro {
+  flex-direction: column;
+}
+
+.about-us-img img {
+  width: 100%;
+}
+
+.about-us-text {
+  background-repeat: no-repeat;
+  background-position: bottom top;
+  padding: 5rem 1.5rem;
+}
+
+.about-us-text-title {
+  margin-bottom: 1.5rem;
+}
+
+.about-us-countries {
+  margin: 7.5rem auto;
+}
+
+.about-us-partner {
+  margin-bottom: 7.5rem;
+}
+
+@media (min-width: 40rem) {
+  .about-us-intro {
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  .about-us-text {
+    padding: 4rem 3.625rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .about-us-intro {
+    flex-direction: row-reverse;
+  }
+
+  .about-us-intro > * {
+    flex-basis: 100%;
+  }
+
+  .about-us-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0 0;
+    padding-left: 5.125rem;
+    padding-right: 5.9375rem;
+  }
+}

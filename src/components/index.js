@@ -9,5 +9,6 @@ export { default as FeatureCard } from "./home/FeatureCard";
 export { default as ProjectLink } from "./ProjectLink";
 export { default as ScrollToTop } from "./ScrollToTop";
 export { default as AboutCard } from "./AboutCard";
+export { default as CountryCollection } from "./countries/CountryCollection";
 
 export const paths = ["about", "locations", "contact"];

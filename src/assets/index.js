@@ -40,6 +40,7 @@ export { default as heroTablet } from "./about/tablet/image-about-hero.jpg";
 export { default as dealTablet } from "./about/tablet/image-real-deal.jpg";
 export { default as talentTablet } from "./about/tablet/image-world-class-talent.jpg";
 
+//countires
 export { default as Canada } from "./shared/desktop/illustration-canada.svg";
 export { default as Australia } from "./shared/desktop/illustration-australia.svg";
 export { default as UK } from "./shared/desktop/illustration-united-kingdom.svg";

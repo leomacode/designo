@@ -12,7 +12,9 @@ function CAT() {
           our expertise can help your business grow.
         </p>
       </div>
-      <Button btnText="get in touch" path="contact" btnTheme="btn-dark" />
+      <div className="cat-btn">
+        <Button btnText="get in touch" path="contact" btnTheme="btn-dark" />
+      </div>
     </div>
   );
 }
