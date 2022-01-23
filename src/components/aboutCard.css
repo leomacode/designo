@@ -44,6 +44,7 @@
   }
 
   .about-card-text {
+    padding: 1.25rem 3.625rem;
     text-align: left;
   }
 }
