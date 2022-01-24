@@ -1,0 +1,63 @@
+.location-card {
+  flex-direction: column;
+}
+
+.location-card > * {
+  flex: 1;
+  max-height: 20.375rem;
+}
+
+.location-card-text {
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 5rem 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location-card-text-title {
+  margin-bottom: 1.5rem;
+}
+
+.location-card-contact-block {
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  .location-card {
+    gap: 1.5rem;
+  }
+
+  .location-card > * {
+    border-radius: 0.5rem;
+  }
+  .location-card-img {
+    overflow: hidden;
+  }
+  .location-card-text {
+    text-align: left;
+    padding: 4rem 4.6875rem;
+  }
+
+  .location-card-contact-block {
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .location-card {
+    flex-direction: row;
+    gap: 1.875rem;
+  }
+
+  .location-card-img {
+    flex: 1;
+  }
+
+  .location-card-text {
+    flex: 2;
+    padding: 1rem 5.9375rem;
+  }
+}

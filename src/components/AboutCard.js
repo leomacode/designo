@@ -7,7 +7,6 @@ function AboutCard({ title, p1, p2, img }) {
   return (
     <div className="about-card flex">
       <div className="about-card-img">
-        {/* <img src={img} alt="about card" /> */}
         <DynamicImg big={big} medium={medium} small={small} name="about card" />
       </div>
 

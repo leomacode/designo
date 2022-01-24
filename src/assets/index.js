@@ -1,3 +1,7 @@
+//shared
+export { default as smallCircle } from "./shared/desktop/bg-pattern-small-circle.svg";
+export { default as twoCircles } from "./shared/desktop/bg-pattern-two-circles.svg";
+
 //design Pages Intro Mobile
 export { default as mobileBg } from "./shared/mobile/bg-pattern-design-pages-intro-mobile.svg";
 
@@ -44,3 +48,11 @@ export { default as talentTablet } from "./about/tablet/image-world-class-talent
 export { default as Canada } from "./shared/desktop/illustration-canada.svg";
 export { default as Australia } from "./shared/desktop/illustration-australia.svg";
 export { default as UK } from "./shared/desktop/illustration-united-kingdom.svg";
+
+//locations
+export { default as AustraliaBig } from "./locations/desktop/image-map-australia.png";
+export { default as CanadaBig } from "./locations/desktop/image-map-canada.png";
+export { default as UKBig } from "./locations/desktop/image-map-united-kingdom.png";
+export { default as AustraliaSmall } from "./locations/tablet/image-map-australia.png";
+export { default as CanadaSmall } from "./locations/tablet/image-map-canada.png";
+export { default as UKSmall } from "./locations/tablet/image-map-uk.png";

@@ -88,7 +88,7 @@ function About() {
           img={deal.img}
         />
       </section>
-      <section className="container ">
+      <section className="about-us-cat container ">
         <CAT />
       </section>
     </main>

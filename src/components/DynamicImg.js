@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./dynamicImg.css";
 
 function DynamicImg({ small, medium, big, name }) {
   const [img, setImg] = useState(selectImg(small, medium, big));
@@ -7,7 +8,7 @@ function DynamicImg({ small, medium, big, name }) {
     let img = medium;
     if (window.innerWidth < 640) {
       img = small;
-    } else if (window.innerWidth > 960) {
+    } else if (window.innerWidth >= 960) {
       img = big;
     }
     return img;
@@ -24,7 +25,7 @@ function DynamicImg({ small, medium, big, name }) {
     };
   });
 
-  return <img src={img} alt={name} />;
+  return <img className="dynamic-img" src={img} alt={name} />;
 }
 
 export default DynamicImg;

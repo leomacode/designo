@@ -10,3 +10,4 @@
 18/1 1.5 service page
 20/1 1.5 service page
 22/1 2.25 service page + about page
+23/1 2.25 about page clear
