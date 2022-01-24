@@ -1,18 +1,18 @@
 import React from "react";
 import { selectImg } from "../utility/selectImg";
-import { smallCircle, twoCircles, CanadaBig, CanadaSmall } from "../assets";
+import { smallCircle, twoCircles } from "../assets";
 import DynamicImg from "./DynamicImg";
 import "./locationCard.css";
 
-function LocationCard({ country, add1, add2, tele, email }) {
+function LocationCard({ country, add1, add2, tele, email, imgBig, imgSmall }) {
   return (
     <div className="location-card flex">
       <div className="location-card-img">
         <DynamicImg
-          name="canada map"
-          small={CanadaBig}
-          medium={CanadaSmall}
-          big={CanadaBig}
+          name={country}
+          small={imgBig}
+          medium={imgSmall}
+          big={imgBig}
         />
       </div>
       <div

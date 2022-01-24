@@ -2,8 +2,7 @@ import React from "react";
 import "./service.css";
 import { CAT, ProjectCard, ServiceCard } from "./../components";
 import { useParams } from "react-router-dom";
-import { services } from "../data/homeData";
-import { projectData } from "../data/serviceData";
+import { services, projectData } from "../data";
 import { mobileBg } from "../assets";
 
 function Service() {

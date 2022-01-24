@@ -18,7 +18,7 @@ import {
   graphicBg,
 } from "../assets";
 
-const projectData = [
+export const projectData = [
   {
     pageTitle: "graphic design",
     description:
@@ -128,5 +128,3 @@ const projectData = [
     ],
   },
 ];
-
-export { projectData };

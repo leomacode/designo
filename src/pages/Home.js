@@ -1,6 +1,6 @@
 import React from "react";
 import { CAT, Button, ServiceCard, FeatureCard } from "../components";
-import { services, features } from "../data/homeData";
+import { services, features } from "../data";
 import "./home.css";
 
 function Home() {
