@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "./button.css";
 function Button({ btnText, path, btnTheme }) {
   return (
     <div className="btn-wrap uppercase text-body">
-      <Link to={path} className={`btn ${btnTheme} text-btn`}>
+      <HashLink smooth to={path} className={`btn ${btnTheme} text-btn`}>
         {btnText}
-      </Link>
+      </HashLink>
     </div>
   );
 }

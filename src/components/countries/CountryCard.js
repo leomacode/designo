@@ -11,7 +11,11 @@ function CountryCard({ name, img }) {
         {name}
       </h3>
       <div className="country-button">
-        <Button btnText="see location" path="/location" btnTheme="btn-light" />
+        <Button
+          btnText="see location"
+          path={`/locations#${name.toLowerCase()}`}
+          btnTheme="btn-light"
+        />
       </div>
     </div>
   );

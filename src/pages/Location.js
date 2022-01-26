@@ -5,24 +5,29 @@ import "./location.css";
 function Location() {
   return (
     <main className="location nav-offset">
-      <section className="locations section-wrap flex">
+      <div className="locations section-wrap flex">
         {locations.map(
           ({ country, add1, add2, email, imgBig, imgSmall, tele }) => (
-            <LocationCard
+            <section
+              className="location-info "
               key={country}
-              country={country}
-              add1={add1}
-              add2={add2}
-              tele={tele}
-              email={email}
-              imgBig={imgBig}
-              imgSmall={imgSmall}
-            />
+              id={country === "united kingdom" ? "uk" : country}
+            >
+              <LocationCard
+                country={country}
+                add1={add1}
+                add2={add2}
+                tele={tele}
+                email={email}
+                imgBig={imgBig}
+                imgSmall={imgSmall}
+              />
+            </section>
           )
         )}
-      </section>
+      </div>
 
-      <section className="loction-cat container">
+      <section id="look" className="loction-cat container">
         <CAT />
       </section>
     </main>
