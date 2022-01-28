@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { CAT, CountryCollection } from "../components";
 import "./contact.css";
 
 function Contact() {
+  const values = { name: "", email: "", phone: "", message: "" };
+  const [formValues, setFormvalues] = useState(values);
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormvalues({ ...formValues, [name]: value });
+    validate(formValues);
+  };
+
+  const validate = (values) => {
+    const { name, email, phone, message } = values;
+    if (!name) {
+      setErrors({ ...errors, nameError: "Can not be empty" });
+    }
+    // !email && setErrors({ ...errors, emailError: "Can not be empty" });
+    // !phone && setErrors({ ...errors, phoneError: "Can not be empty" });
+    if (!message) {
+      setErrors({ ...errors, messageError: "Can not be empty" });
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    validate(formValues);
+    console.log(errors);
+  };
+
   return (
     <main className="contact nav-offset">
       <div className="contact-us-form-wrap section-wrap">
@@ -19,31 +47,48 @@ function Contact() {
             </p>
           </div>
           <div className="contact-us-form">
-            <form action="">
+            <form onSubmit={handleSubmit}>
               <div className="contact-us-form-content flex">
-                <input
-                  type="text"
-                  placeholder="name"
-                  className="contact-us-form-input "
-                />
-
-                <input
-                  type="text"
-                  placeholder="email address"
-                  className="contact-us-form-input "
-                />
-
-                <input
-                  type="text"
-                  placeholder="phone"
-                  className="contact-us-form-input "
-                />
-
-                <textarea
-                  type="text-area"
-                  placeholder="your message"
-                  className="contact-us-form-input contact-us-form-textarea "
-                />
+                <div className="contact-us-input-wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="name"
+                    className="contact-us-form-input"
+                    value={formValues.name}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="contact-us-input-wrapper">
+                  <input
+                    type="text"
+                    name="email"
+                    placeholder="email address"
+                    className="contact-us-form-input "
+                    value={formValues.email}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="contact-us-input-wrapper">
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="phone"
+                    className="contact-us-form-input "
+                    value={formValues.phone}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="contact-us-input-wrapper">
+                  <textarea
+                    type="text-area"
+                    name="message"
+                    placeholder="your message"
+                    className="contact-us-form-input contact-us-form-textarea "
+                    value={formValues.message}
+                    onChange={handleChange}
+                  />
+                </div>
               </div>
               <div className="contact-us-form-btn-wrap text-center">
                 <button className="contact-us-form-btn uppercase text-body border-curve">

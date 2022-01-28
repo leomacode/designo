@@ -2,6 +2,9 @@
   flex-direction: column;
   gap: 3rem;
   padding: 4.5rem 1.5rem;
+  background-image: url("../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contact-us-text-title {
@@ -12,8 +15,12 @@
   flex-direction: column;
   gap: 1.5625rem;
 }
+.contact-us-input-wrapper {
+  width: 100%;
+}
 
 .contact-us-form-input {
+  width: 100%;
   padding: 0.6875rem 0.8125rem;
   color: #fff;
   background: transparent;
@@ -53,6 +60,8 @@
 
 @media (min-width: 40rem) {
   .contact-us-form-section {
+    background-image: url("../assets/contact/desktop/bg-pattern-hero-desktop.svg");
+    background-size: contain;
     border-radius: 0.5rem;
     padding: 4.4375rem 3.625rem;
     gap: 2.5rem;
@@ -92,6 +101,22 @@
 
   .contact-us-form-input {
     padding: 0.75rem 1rem;
+  }
+
+  .contact-us-input-wrapper {
+    border-bottom: 2px solid transparent;
+  }
+
+  .contact-us-form-input:focus {
+    border-bottom: 3px solid var(--clr-white);
+  }
+
+  .contact-us-form-input:invalid {
+    background-color: pink;
+  }
+
+  .contact-us-input-wrapper:focus-within {
+    border-bottom: none;
   }
 
   .contact-us-text {
