@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { CAT, CountryCollection, ErrorMessage } from "../components";
 import "./contact.css";
 
@@ -7,34 +7,50 @@ function Contact() {
   const [formValues, setFormvalues] = useState(values);
   const [errors, setErrors] = useState({});
 
+  useEffect(() => {
+    if (Object.keys(errors).length) {
+      setErrors(validate(formValues));
+    }
+    // eslint-disable-next-line
+  }, [formValues]);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormvalues({ ...formValues, [name]: value });
-    validate(value);
   };
 
   const validate = (values) => {
     const { name, email, phone, message } = values;
-    let errors = {};
+    const validateEmail = (email) => {
+      return String(email)
+        .toLowerCase()
+        .match(
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        );
+    };
+    let err = {};
     if (!name) {
-      errors = { ...errors, nameError: "Can not be empty" };
+      err.nameError = "Can not be empty";
     }
     if (!email) {
-      errors = { ...errors, emailError: "Can not be empty" };
-    }
-    if (!phone) {
-      errors = { ...errors, phoneError: "Can not be empty" };
-    }
-    if (!message) {
-      errors = { ...errors, messageError: "Can not be empty" };
+      err.emailError = "Can not be empty";
+    } else if (!validateEmail(email)) {
+      err.emailError = "Invalid email";
     }
 
-    setErrors({ ...errors });
+    if (!phone) {
+      err.phoneError = "Can not be empty";
+    }
+    if (!message) {
+      err.messageError = "Can not be empty";
+    }
+
+    return err;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    validate(formValues);
+    setErrors(validate(formValues));
   };
 
   return (
@@ -64,7 +80,7 @@ function Contact() {
                     value={formValues.name}
                     onChange={handleChange}
                   />
-                  <ErrorMessage msg="can not be empty" />
+                  {errors.nameError && <ErrorMessage msg={errors.nameError} />}
                 </div>
                 <div className="contact-us-input-wrapper">
                   <input
@@ -75,7 +91,10 @@ function Contact() {
                     value={formValues.email}
                     onChange={handleChange}
                   />
-                  <ErrorMessage msg="can noe be empty" />
+
+                  {errors.emailError && (
+                    <ErrorMessage msg={errors.emailError} />
+                  )}
                 </div>
                 <div className="contact-us-input-wrapper">
                   <input
@@ -86,7 +105,9 @@ function Contact() {
                     value={formValues.phone}
                     onChange={handleChange}
                   />
-                  <ErrorMessage msg="can not be empty" />
+                  {errors.phoneError && (
+                    <ErrorMessage msg={errors.phoneError} />
+                  )}
                 </div>
                 <div className="contact-us-input-wrapper">
                   <textarea
@@ -97,7 +118,9 @@ function Contact() {
                     value={formValues.message}
                     onChange={handleChange}
                   />
-                  <ErrorMessage msg="can noe be empty" />
+                  {errors.messageError && (
+                    <ErrorMessage msg={errors.messageError} />
+                  )}
                 </div>
               </div>
               <div className="contact-us-form-btn-wrap text-center">
