@@ -56,3 +56,6 @@ export { default as UKBig } from "./locations/desktop/image-map-united-kingdom.p
 export { default as AustraliaSmall } from "./locations/tablet/image-map-australia.png";
 export { default as CanadaSmall } from "./locations/tablet/image-map-canada.png";
 export { default as UKSmall } from "./locations/tablet/image-map-uk.png";
+
+//contact
+export { default as errorIcon } from "./contact/desktop/icon-error.svg";

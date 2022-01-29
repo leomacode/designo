@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CAT, CountryCollection } from "../components";
+import { CAT, CountryCollection, ErrorMessage } from "../components";
 import "./contact.css";
 
 function Contact() {
@@ -10,25 +10,31 @@ function Contact() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormvalues({ ...formValues, [name]: value });
-    validate(formValues);
+    validate(value);
   };
 
   const validate = (values) => {
     const { name, email, phone, message } = values;
+    let errors = {};
     if (!name) {
-      setErrors({ ...errors, nameError: "Can not be empty" });
+      errors = { ...errors, nameError: "Can not be empty" };
     }
-    // !email && setErrors({ ...errors, emailError: "Can not be empty" });
-    // !phone && setErrors({ ...errors, phoneError: "Can not be empty" });
+    if (!email) {
+      errors = { ...errors, emailError: "Can not be empty" };
+    }
+    if (!phone) {
+      errors = { ...errors, phoneError: "Can not be empty" };
+    }
     if (!message) {
-      setErrors({ ...errors, messageError: "Can not be empty" });
+      errors = { ...errors, messageError: "Can not be empty" };
     }
+
+    setErrors({ ...errors });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     validate(formValues);
-    console.log(errors);
   };
 
   return (
@@ -58,6 +64,7 @@ function Contact() {
                     value={formValues.name}
                     onChange={handleChange}
                   />
+                  <ErrorMessage msg="can not be empty" />
                 </div>
                 <div className="contact-us-input-wrapper">
                   <input
@@ -68,6 +75,7 @@ function Contact() {
                     value={formValues.email}
                     onChange={handleChange}
                   />
+                  <ErrorMessage msg="can noe be empty" />
                 </div>
                 <div className="contact-us-input-wrapper">
                   <input
@@ -78,6 +86,7 @@ function Contact() {
                     value={formValues.phone}
                     onChange={handleChange}
                   />
+                  <ErrorMessage msg="can not be empty" />
                 </div>
                 <div className="contact-us-input-wrapper">
                   <textarea
@@ -88,6 +97,7 @@ function Contact() {
                     value={formValues.message}
                     onChange={handleChange}
                   />
+                  <ErrorMessage msg="can noe be empty" />
                 </div>
               </div>
               <div className="contact-us-form-btn-wrap text-center">

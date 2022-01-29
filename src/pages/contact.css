@@ -17,6 +17,7 @@
 }
 .contact-us-input-wrapper {
   width: 100%;
+  position: relative;
 }
 
 .contact-us-form-input {

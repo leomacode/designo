@@ -19,4 +19,7 @@ export { default as DynamicImg } from "./DynamicImg";
 //location page
 export { default as LocationCard } from "./LocationCard";
 
+//contact page
+export { default as ErrorMessage } from "./ErrorMessage";
+
 export const paths = ["about", "locations", "contact"];

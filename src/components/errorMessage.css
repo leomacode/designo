@@ -1,0 +1,23 @@
+.contact-error-message {
+  display: flex;
+  gap: 0.5rem;
+  font-style: italic;
+  align-items: center;
+  position: absolute;
+  top: 0.6875rem;
+  right: 0.8125rem;
+}
+
+@media (min-width: 40rem) {
+  .contact-error-message {
+    top: 0.6875rem;
+    right: 1.5rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  .contact-error-message {
+    top: 0.75rem;
+    right: 1rem;
+  }
+}
