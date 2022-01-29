@@ -24,5 +24,5 @@ export default function useDynamicImg(small, medium, big) {
     };
   });
 
-  return { img };
+  return img;
 }

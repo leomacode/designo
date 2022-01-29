@@ -1,13 +1,11 @@
 import React from "react";
 import "./aboutCard.css";
-import { DynamicImg } from "./";
 
 function AboutCard({ title, p1, p2, img }) {
-  const { big, medium, small } = img;
   return (
     <div className="about-card flex">
       <div className="about-card-img">
-        <DynamicImg big={big} medium={medium} small={small} name="about card" />
+        <img src={img} alt={`about-card-${title}`} />
       </div>
 
       <div className="about-card-text text-center flex">
