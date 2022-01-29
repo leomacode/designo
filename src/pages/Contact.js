@@ -124,7 +124,7 @@ function Contact() {
                 </div>
               </div>
               <div className="contact-us-form-btn-wrap text-center">
-                <button className="contact-us-form-btn uppercase text-body border-curve">
+                <button className="contact-us-form-btn uppercase text-body border-curve btn">
                   submit
                 </button>
               </div>

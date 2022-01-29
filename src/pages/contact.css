@@ -128,4 +128,8 @@
   .contact-us-form-btn-wrap {
     margin-top: 1.5rem;
   }
+
+  .contact-us-form-btn {
+    cursor: pointer;
+  }
 }
