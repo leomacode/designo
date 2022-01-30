@@ -13,7 +13,7 @@ function CountryCard({ name, img }) {
       <div className="country-button">
         <Button
           btnText="see location"
-          path={`/locations#${name.toLowerCase()}`}
+          path={`locations#${name.toLowerCase()}`}
           btnTheme="btn-light"
         />
       </div>

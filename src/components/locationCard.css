@@ -7,6 +7,10 @@
   max-height: 20.375rem;
 }
 
+.location-card-img img {
+  width: 100%;
+}
+
 .location-card-text {
   background-repeat: no-repeat;
   background-size: contain;

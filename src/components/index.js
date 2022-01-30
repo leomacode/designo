@@ -14,7 +14,6 @@ export { default as LinkItem } from "./LinkItem";
 
 //about page
 export { default as AboutCard } from "./AboutCard";
-export { default as DynamicImg } from "./DynamicImg";
 
 //location page
 export { default as LocationCard } from "./LocationCard";
