@@ -4,13 +4,13 @@ import { Australia, Canada, UK } from "./../../assets";
 import CountryCard from "./CountryCard";
 function CountryCollection() {
   const countries = [
-    { name: "cananda", img: Canada },
+    { name: "Cananda", img: Canada },
     { name: "Australia", img: Australia },
     { name: "UK", img: UK },
   ];
 
   return (
-    <div className="country-collection flex">
+    <div className="country-collection flex" data-testid="countries">
       {countries.map(({ name, img }) => (
         <CountryCard key={name} name={name} img={img} />
       ))}

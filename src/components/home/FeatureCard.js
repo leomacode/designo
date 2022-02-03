@@ -1,5 +1,6 @@
 import React from "react";
 import "./featureCard.css";
+
 function FeatureCard({ title, imgUrl, text }) {
   return (
     <div className="feature-card flex">

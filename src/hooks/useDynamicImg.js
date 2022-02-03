@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 
 export default function useDynamicImg(small, medium, big) {
-  const [img, setImg] = useState(selectImg(small, medium, big));
+  const selectedImg = selectImg(small, medium, big);
+  const [img, setImg] = useState(selectedImg);
 
   function selectImg(small, medium, big) {
     let img = medium;
