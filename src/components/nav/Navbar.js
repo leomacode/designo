@@ -51,7 +51,11 @@ function Navbar() {
             ))}
           </ul>
         </nav>
-        <div className="overlay" data-visible={dataVisible}></div>
+        <div
+          className="overlay"
+          data-visible={dataVisible}
+          data-testid="overlay"
+        ></div>
       </div>
     </header>
   );
