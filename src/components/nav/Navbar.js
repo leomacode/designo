@@ -28,7 +28,7 @@ function Navbar() {
   return (
     <header className="bg-white ">
       <div className="container flex navbar bg-white">
-        <div className="logo">
+        <div className="logo" data-testid="logo-element">
           <NavLink to="/">
             <img src={logoDark} alt="logo" />
           </NavLink>
@@ -39,6 +39,7 @@ function Navbar() {
             dataVisible ? setDataVisible(false) : setDataVisible(true)
           }
           className="nav-btn"
+          data-testid="nav-btn"
         >
           <span data-visible={dataVisible}></span>
         </div>
