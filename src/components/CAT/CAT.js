@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./";
+import { Button } from "../";
 import "./cat.css";
 
 function CAT() {
@@ -7,7 +7,7 @@ function CAT() {
     <div className="cat container flex border-curve">
       <div className="cat-text text-white">
         <h1 className="text-h1">Let’s talk about your project</h1>
-        <p className="text-body">
+        <p className="text-body" data-testid="text-body">
           Ready to take it to the next level? Contact us today and find out how
           our expertise can help your business grow.
         </p>

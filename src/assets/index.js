@@ -59,3 +59,11 @@ export { default as UKSmall } from "./locations/tablet/image-map-uk.png";
 
 //contact
 export { default as errorIcon } from "./contact/desktop/icon-error.svg";
+
+//shared desktop
+export { default as logoLight } from "./shared/desktop/logoLight.png";
+export { default as facebook } from "./shared/desktop/icon-facebook.svg";
+export { default as instagram } from "./shared/desktop/icon-instagram.svg";
+export { default as pinterest } from "./shared/desktop/icon-pinterest.svg";
+export { default as youtube } from "./shared/desktop/icon-youtube.svg";
+export { default as twitter } from "./shared/desktop/icon-twitter.svg";

@@ -29,7 +29,8 @@ ol[role="list"] {
 }
 
 /* Set core root defaults */
-html:focus-within {
+html {
+  scroll-padding-top: 5.75rem;
   scroll-behavior: smooth;
 }
 

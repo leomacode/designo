@@ -1,5 +1,5 @@
 import React from "react";
-import { errorIcon } from "../assets";
+import { errorIcon } from "../../assets";
 import "./errorMessage.css";
 function ErrorMessage({ msg }) {
   return (

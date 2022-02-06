@@ -1,6 +1,6 @@
 import React from "react";
-import { smallCircle, twoCircles } from "../assets";
-import { useDynamicImg } from "../hooks";
+import { smallCircle, twoCircles } from "../../assets";
+import { useDynamicImg } from "../../hooks";
 import "./locationCard.css";
 
 function LocationCard({ country, add1, add2, tele, email, imgBig, imgSmall }) {
@@ -12,6 +12,7 @@ function LocationCard({ country, add1, add2, tele, email, imgBig, imgSmall }) {
         <img src={img} alt={country} />
       </div>
       <div
+        data-testid="location-card-bg"
         className="location-card-text text-center bg-lt-pink flex"
         style={{
           backgroundImage: `url(${bgImg})`,

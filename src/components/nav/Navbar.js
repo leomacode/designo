@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import { NavLink, useLocation } from "react-router-dom";
 import logoDark from "./../../assets/shared/desktop/logoDark.png";
-import { LinkItem, paths } from "./..";
+import { LinkItem, paths } from "..";
 
 function Navbar() {
   const [dataVisible, setDataVisible] = useState(false);
