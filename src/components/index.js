@@ -6,10 +6,10 @@ export { default as ScrollToTop } from "./ScrollToTop";
 export { default as CountryCollection } from "./countries/CountryCollection";
 
 //home page
-export { default as ProjectCard } from "./ProjectCard";
+export { default as ProjectCard } from "./ProjectCard/ProjectCard";
 export { default as FeatureCard } from "./home/FeatureCard";
 export { default as ServiceCard } from "./home/ServiceCard";
-export { default as ProjectLink } from "./ProjectLink";
+export { default as ProjectLink } from "./ProjectLink/ProjectLink";
 export { default as LinkItem } from "./LinkItem/LinkItem";
 
 //about page

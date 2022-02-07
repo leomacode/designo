@@ -67,3 +67,4 @@ export { default as instagram } from "./shared/desktop/icon-instagram.svg";
 export { default as pinterest } from "./shared/desktop/icon-pinterest.svg";
 export { default as youtube } from "./shared/desktop/icon-youtube.svg";
 export { default as twitter } from "./shared/desktop/icon-twitter.svg";
+export { default as arrow } from "./shared/desktop/icon-right-arrow.svg";

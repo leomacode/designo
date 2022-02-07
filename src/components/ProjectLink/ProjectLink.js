@@ -1,7 +1,7 @@
 import React from "react";
 import "./projectLink.css";
 import { Link } from "react-router-dom";
-import { arrow } from "../assets/shared/desktop";
+import { arrow } from "../../assets";
 
 function ProjectLink({ path }) {
   const pathName = path.split(" ").join("-");
