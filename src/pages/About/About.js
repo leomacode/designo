@@ -1,5 +1,5 @@
 import React from "react";
-import { CAT, AboutCard, CountryCollection } from "../components";
+import { CAT, AboutCard, CountryCollection } from "../../components";
 import {
   talentDesktop,
   talentMobile,
@@ -12,9 +12,9 @@ import {
   heroMobile,
   bgDesktop,
   bgMobile,
-} from "../assets";
+} from "../../assets";
 import "./about.css";
-import { useDynamicImg } from "../hooks";
+import { useDynamicImg } from "../../hooks";
 
 function About() {
   const heroImg = useDynamicImg(heroMobile, heroTablet, heroDesktop);
@@ -54,7 +54,7 @@ function About() {
             }}
           >
             <h1 className="about-us-text-title text-h1">About us</h1>
-            <p className="text-body">
+            <p className="text-body" data-testid="about-text-body">
               Founded in 2010, we are a creative agency that produces lasting
               results for our clients. We’ve partnered with many startups,
               corporations, and nonprofits alike to craft designs that make real
