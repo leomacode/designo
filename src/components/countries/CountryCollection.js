@@ -1,6 +1,6 @@
 import React from "react";
 import "./countryCollection.css";
-import { Australia, Canada, UK } from "./../../assets";
+import { Australia, Canada, UK } from "../../assets";
 import CountryCard from "./CountryCard";
 function CountryCollection() {
   const countries = [

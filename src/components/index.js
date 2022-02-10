@@ -3,7 +3,7 @@ export { default as Footer } from "./Footer/Footer";
 export { default as CAT } from "./CAT/CAT";
 export { default as Button } from "./Button/Button";
 export { default as ScrollToTop } from "./ScrollToTop";
-export { default as CountryCollection } from "./countries/CountryCollection";
+export { default as CountryCollection } from "./Countries/CountryCollection";
 
 //home page
 export { default as ProjectCard } from "./ProjectCard/ProjectCard";

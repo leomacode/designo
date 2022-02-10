@@ -10,7 +10,7 @@ function createRoutes() {
       <Route path="about" element={<About />} />
       <Route path="locations" element={<Location />} />
       <Route path="contact" element={<Contact />} />
-      <Route element={<NotFound />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

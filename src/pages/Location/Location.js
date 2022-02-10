@@ -1,11 +1,14 @@
 import React from "react";
-import { CAT, LocationCard } from "../components";
-import { locations } from "../data";
+import { CAT, LocationCard } from "../../components";
+import { locations } from "../../data";
 import "./location.css";
 function Location() {
   return (
     <main className="location nav-offset">
-      <div className="locations section-wrap flex">
+      <div
+        data-testid="location-collection"
+        className="locations section-wrap flex"
+      >
         {locations.map(
           ({ country, add1, add2, email, imgBig, imgSmall, tele }) => (
             <section
@@ -27,7 +30,7 @@ function Location() {
         )}
       </div>
 
-      <section id="look" className="loction-cat container">
+      <section data-testid="location-cat" className="loction-cat container">
         <CAT />
       </section>
     </main>

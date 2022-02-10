@@ -1,6 +1,6 @@
 import React from "react";
-import { CAT, Button, ServiceCard, FeatureCard } from "../components";
-import { services, features } from "../data";
+import { CAT, Button, ServiceCard, FeatureCard } from "../../components";
+import { services, features } from "../../data";
 import "./home.css";
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
               Award-winning custom designs and digital branding solutions
             </h1>
 
-            <p className="hero-sub-heading">
+            <p data-testid="home-subheaidng" className="hero-sub-heading">
               With over 10 years in the industry, we are experienced in creating
               fully responsive websites, app design, and engaging brand
               experiences. Find out more about our services.
