@@ -1,9 +1,10 @@
 import React from "react";
 import "./service.css";
-import { CAT, ProjectCard, ServiceCard } from "./../components";
+import { CAT, ProjectCard, ServiceCard } from "../../components";
 import { useParams } from "react-router-dom";
-import { services, projectData } from "../data";
-import { mobileBg } from "../assets";
+import { services, projectData } from "../../data";
+import { useDynamicImg } from "../../hooks";
+import { mobileBg } from "../../assets";
 
 function Service() {
   //get service name
@@ -21,12 +22,7 @@ function Service() {
   )[0];
 
   //get background image according to the window size
-  const bgImage = selectImg();
-
-  function selectImg() {
-    console.log(window.innerWidth < 640 ? mobileBg : backGround);
-    return window.innerWidth < 640 ? mobileBg : backGround;
-  }
+  const bgImage = useDynamicImg(mobileBg, backGround, backGround);
 
   return (
     <main className="service-main nav-offset">
@@ -36,11 +32,16 @@ function Service() {
           style={{ backgroundImage: `url(${bgImage})` }}
         >
           <h1 className="service-title text-h1 capitalize">{pageTitle}</h1>
-          <p className="text-body">{description}</p>
+          <p data-testid="test-body" className="text-body">
+            {description}
+          </p>
         </div>
       </section>
 
-      <section className="service-projects container section-margin grid">
+      <section
+        data-testid="project-cards"
+        className="service-projects container section-margin grid"
+      >
         {projects.map(({ img, title, description }) => (
           <ProjectCard
             key={title}
@@ -51,7 +52,10 @@ function Service() {
         ))}
       </section>
 
-      <section className="service-cards container grid section-margin">
+      <section
+        data-testid="service-cards"
+        className="service-cards container grid section-margin"
+      >
         {serviceCards.map(({ title, img, imgM, imgL, imgS }) => (
           <ServiceCard
             key={title}
@@ -64,7 +68,7 @@ function Service() {
         ))}
       </section>
 
-      <section className="container ">
+      <section data-testid="service-cat" className="container ">
         <CAT />
       </section>
     </main>

@@ -48,7 +48,7 @@ it("Submit button is displayed on the page", () => {
   expect(btnElement).toBeInTheDocument();
 });
 
-test("rendering and submitting a form", async () => {
+it("rendering and submitting a form", async () => {
   const validate = jest.fn();
   render(<MockContact validate={validate} />);
   userEvent.click(screen.getByRole("button"));
