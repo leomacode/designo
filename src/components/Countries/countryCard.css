@@ -1,0 +1,16 @@
+.country-card {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.country-card-img {
+  background-image: url("../../assets/shared/desktop/bg-pattern-small-circle.svg");
+  background-repeat: no-repeat;
+}
+
+.country-card-name {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
