@@ -235,7 +235,13 @@ body {
 }
 
 .nav-offset {
-  margin-top: 5.75rem;
+  margin-top: 5.8125rem;
+}
+
+@media (min-width: 40rem) {
+  .nav-offset {
+    margin-top: 9.6875rem;
+  }
 }
 
 .border-curve {
