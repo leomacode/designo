@@ -58,22 +58,21 @@
   .hero {
     flex-direction: row;
     padding-top: 0;
-    max-width: 68rem;
+    max-width: 60rem;
     margin: 0 auto;
   }
 
   .hero-text {
-    padding-top: 6rem;
+    padding: 9.0625rem 0;
     text-align: left;
-    padding-right: 0;
-    padding-left: 0;
-    margin-left: clamp(2rem, 4.5rem, 5rem);
+    flex-basis: 70%;
+    padding-left: 1rem;
   }
 
   .hero-img {
-    width: 100%;
-    height: 37rem;
-    padding-left: 5.75rem;
+    height: 41rem;
+    background-position: center -1rem;
+    flex-basis: 56%;
   }
 
   .hero-sub-heading {
